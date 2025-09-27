@@ -37,8 +37,7 @@ const mapaPorPergunta = [
 
 
 class Quiz {
-  constructor(form, mapa) {
-    this.form = form;
+  constructor(mapa) {
     this.mapa = mapa;
     this.pontuacao = [0,0,0,0,0]; 
   }
@@ -87,7 +86,7 @@ class Quiz {
 }
 
 
-const quiz = new Quiz(formulario, mapaPorPergunta);
+const quiz = new Quiz(mapaPorPergunta);
 let resetBtn = null;
 
 formulario.addEventListener("submit", function(e) {
