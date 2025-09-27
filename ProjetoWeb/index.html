@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Quiz Pokémon</title>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Que personagem você é?</h1>
+      <h3>Bem-vindo ao universo Pokémon!</h3>
+      <p>Neste mundo, treinadores e criaturas incríveis convivem em harmonia, cada Pokémon possuindo sua própria personalidade, habilidades e história.</p>
+      <p>Agora é a sua vez: responda ao questionário e descubra qual Pokémon mais combina com você entre os lendários e icônicos: Pikachu, Charizard, Mewtwo, Giratina e Porygon-Z.</p>
+      <p>Será que você é extrovertido e leal como o Pikachu, determinado e corajoso como o Charizard, racional como o Mewtwo, misterioso como o Giratina ou criativo e imprevisível como o Porygon-Z?</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <form id="quizForm">
+
+        <div class="pergunta">
+          <p>1. Qual atividade você prefere no seu tempo livre?</p>
+          <label><input type="radio" name="q1" value="op1" required> Explorar novos lugares</label>
+          <label><input type="radio" name="q1" value="op2"> Treinar e se superar</label>
+          <label><input type="radio" name="q1" value="op3"> Estudar e pesquisar</label>
+        </div>
+
+        <div class="pergunta">
+          <p>2. Como você reage diante de um desafio?</p>
+          <label><input type="radio" name="q2" value="op1" required> Com entusiasmo e energia</label>
+          <label><input type="radio" name="q2" value="op2"> Com estratégia e raciocínio</label>
+          <label><input type="radio" name="q2" value="op3"> Com calma e mistério</label>
+        </div>
+
+        <div class="pergunta">
+          <p>3. O que você valoriza mais em si mesmo?</p>
+          <label><input type="radio" name="q3" value="op1" required> Lealdade e amizade</label>
+          <label><input type="radio" name="q3" value="op2"> Coragem e determinação</label>
+          <label><input type="radio" name="q3" value="op3"> Inteligência e originalidade</label>
+        </div>
+
+        <div class="pergunta">
+          <p>4. Qual cenário você prefere?</p>
+          <label><input type="radio" name="q4" value="op1" required> Um campo ensolarado cheio de vida</label>
+          <label><input type="radio" name="q4" value="op2"> Uma montanha com desafios</label>
+          <label><input type="radio" name="q4" value="op3"> Um lugar misterioso ou tecnológico</label>
+        </div>
+
+        <div class="pergunta">
+          <p>5. Como os outros geralmente descrevem você?</p>
+          <label><input type="radio" name="q5" value="op1" required> Amigável e divertido</label>
+          <label><input type="radio" name="q5" value="op2"> Intenso e competitivo</label>
+          <label><input type="radio" name="q5" value="op3"> Criativo e imprevisível</label>
+        </div>
+
+        <div class="pergunta">
+          <p>6. O que mais te motiva?</p>
+          <label><input type="radio" name="q6" value="op1" required> As pessoas que eu amo</label>
+          <label><input type="radio" name="q6" value="op2"> Superar meus limites</label>
+          <label><input type="radio" name="q6" value="op3"> Descobrir o desconhecido</label>
+        </div>
+
+        <div class="pergunta">
+          <p>7. Se você fosse escolher um poder especial, qual seria?</p>
+          <label><input type="radio" name="q7" value="op1" required> Controlar a eletricidade</label>
+          <label><input type="radio" name="q7" value="op2"> Lançar chamas</label>
+          <label><input type="radio" name="q7" value="op3"> Manipular o espaço e a mente</label>
+        </div>
+
+        <div class="pergunta">
+          <p>8. Em grupo, você é…</p>
+          <label><input type="radio" name="q8" value="op1" required> O que anima e faz amizade com todos</label>
+          <label><input type="radio" name="q8" value="op2"> O líder que toma as decisões</label>
+          <label><input type="radio" name="q8" value="op3"> O pensador que observa e dá ideias diferentes</label>
+        </div>
+
+        <div class="pergunta">
+          <p>9. Qual estilo de batalha você prefere?</p>
+          <label><input type="radio" name="q9" value="op1" required> Rápida e ágil</label>
+          <label><input type="radio" name="q9" value="op2"> Intensa e poderosa</label>
+          <label><input type="radio" name="q9" value="op3"> Imprevisível e estratégica</label>
+        </div>
+
+        <div class="pergunta">
+          <p>10. Qual destas frases combina mais com você?</p>
+          <label><input type="radio" name="q10" value="op1" required> A amizade é a maior força do mundo.</label>
+          <label><input type="radio" name="q10" value="op2"> Nunca recuo diante de um desafio.</label>
+          <label><input type="radio" name="q10" value="op3"> O que importa é pensar diferente.</label>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Descobrir meu Pokémon</button>
+        </div>
+      </form>
+
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
